@@ -37,10 +37,28 @@ struct ContentView: View {
                     }) {
                         Text("Close Connection")
                     }
+                    Button(action: {
+                        let virtualConfiguration = GCVirtualController.Configuration()
+                        virtualConfiguration.elements = [GCInputButtonA,
+                                                         GCInputButtonB,
+                                                         GCInputButtonX,
+                                                         GCInputButtonY,
+                                                         GCInputDirectionPad,
+                                                         GCInputButtonHome,
+                                                         GCInputButtonShare,
+                                                         GCInputLeftShoulder,
+                                                         GCInputRightShoulder]
+                        let virtualController = GCVirtualController(configuration: virtualConfiguration)
+                        virtualController.connect()
+                        print("Creating virtual controller")
+                    }) {
+                        Text("Create GP")
+                    }
                 }
                 Text("Froce:")
             }
-            TouchableViewContainer()
+            Spacer()
+            //TouchableViewContainer()
         }
     }
 }
