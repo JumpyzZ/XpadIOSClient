@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GameController
 
 @main
 struct GameControllerIOSApp: App {
@@ -15,3 +16,4 @@ struct GameControllerIOSApp: App {
         }
     }
 }
+

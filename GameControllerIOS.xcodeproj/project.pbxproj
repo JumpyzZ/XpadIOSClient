@@ -14,6 +14,7 @@
 		A98435AE273B8D54009ED459 /* GameControllerIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435AD273B8D54009ED459 /* GameControllerIOSTests.swift */; };
 		A98435B8273B8D54009ED459 /* GameControllerIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */; };
 		A98435BA273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */; };
+		C2C35310A3C50107F3497514 /* Pods_GameControllerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameControllerIOS.debug.xcconfig"; path = "Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameControllerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameControllerIOS.release.xcconfig"; path = "Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS.release.xcconfig"; sourceTree = "<group>"; };
 		A9843599273B8D53009ED459 /* GameControllerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControllerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSApp.swift; sourceTree = "<group>"; };
 		A984359E273B8D53009ED459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C35310A3C50107F3497514 /* Pods_GameControllerIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653D7EEDCBE940757E9004A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9843590273B8D53009ED459 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +91,8 @@
 				A98435AC273B8D54009ED459 /* GameControllerIOSTests */,
 				A98435B6273B8D54009ED459 /* GameControllerIOSUITests */,
 				A984359A273B8D53009ED459 /* Products */,
+				C1C13AF2AD38B83B21E08AF3 /* Pods */,
+				653D7EEDCBE940757E9004A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +142,15 @@
 			path = GameControllerIOSUITests;
 			sourceTree = "<group>";
 		};
+		C1C13AF2AD38B83B21E08AF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */,
+				9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A98435BD273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOS" */;
 			buildPhases = (
+				2BBDB103449F53B00618E082 /* [CP] Check Pods Manifest.lock */,
 				A9843595273B8D53009ED459 /* Sources */,
 				A9843596273B8D53009ED459 /* Frameworks */,
 				A9843597273B8D53009ED459 /* Resources */,
+				38D157D7B273073D788BBAF9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +277,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BBDB103449F53B00618E082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameControllerIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D157D7B273073D788BBAF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9843595273B8D53009ED459 /* Sources */ = {
@@ -413,6 +481,7 @@
 		};
 		A98435BE273B8D54009ED459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,8 +494,11 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,6 +514,7 @@
 		};
 		A98435BF273B8D54009ED459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,8 +527,11 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
