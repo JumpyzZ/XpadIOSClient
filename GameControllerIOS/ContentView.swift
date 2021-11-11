@@ -10,49 +10,32 @@ import Socket
 import GameController
 
 struct ContentView: View {
-    var socket: Socket = try! Socket.create()
+    @EnvironmentObject var envObj: envObject
     var body: some View {
         VStack{
             VStack{
                 HStack {
                     Button(action: {
-                        try! socket.listen(on: 5050)
+                        try! envObj.socket.listen(on: 5050)
                     }) {
                         Text("Start Listen")
                     }
                     Button(action: {
-                        try! socket.acceptConnection()
+                        try! envObj.socket.acceptConnection()
                     }) {
                         Text("Accept connection")
                     }
                     Button(action: {
                         let time = Date()
-                        try! socket.write(from: time.timeIntervalSince1970.formatted())
+                        try! envObj.socket.write(from: time.timeIntervalSince1970.formatted())
                     }) {
                         Text("Send Msg")
                     }
                     Button(action: {
-                        try! socket.write(from: "SIG Close Socket")
-                        socket.close()
+                        try! envObj.socket.write(from: "SIG Close Socket")
+                        envObj.socket.close()
                     }) {
                         Text("Close Connection")
-                    }
-                    Button(action: {
-                        let virtualConfiguration = GCVirtualController.Configuration()
-                        virtualConfiguration.elements = [GCInputButtonA,
-                                                         GCInputButtonB,
-                                                         GCInputButtonX,
-                                                         GCInputButtonY,
-                                                         GCInputDirectionPad,
-                                                         GCInputButtonHome,
-                                                         GCInputButtonShare,
-                                                         GCInputLeftShoulder,
-                                                         GCInputRightShoulder]
-                        let virtualController = GCVirtualController(configuration: virtualConfiguration)
-                        virtualController.connect()
-                        print("Creating virtual controller")
-                    }) {
-                        Text("Create GP")
                     }
                 }
                 Text("Froce:")
