@@ -17,27 +17,34 @@ struct ContentView: View {
             VStack{
                 HStack {
                     Button(action: {
-                        let s = globalObj.socket
-                        try! s.listen(on: 5050)
-                        isListening = s.isListening
-                        isConnected = s.isConnected
+                        if !(isListening || isConnected){
+                            let s = globalObj.socket
+                            try! s.listen(on: 5050)
+                            isListening = s.isListening
+                            isConnected = s.isConnected
+                        }
                     }) {
                         Text("Start Listen")
                     }
                     Button(action: {
-                        let s = globalObj.socket
-                        try! s.acceptConnection()
-                        isListening = s.isListening
-                        isConnected = s.isConnected
+                        if isListening && !isConnected{
+                            let s = globalObj.socket
+                            try! s.acceptConnection()
+                            isListening = s.isListening
+                            isConnected = s.isConnected
+                        }
                     }) {
                         Text("Accept connection")
                     }
                     Button(action: {
-                        let s = globalObj.socket
-                        try! s.write(from: "SIG Close Socket")
-                        s.close()
-                        isListening = s.isListening
-                        isConnected = s.isConnected
+                        if isConnected{
+                            let s = globalObj.socket
+                            try! s.write(from: "SIG Close Socket")
+                            s.close()
+                            isListening = s.isListening
+                            isConnected = s.isConnected
+                            globalObj.socket = try! Socket.create()
+                        }
                     }) {
                         Text("Close Connection")
                     }
