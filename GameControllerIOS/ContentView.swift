@@ -10,30 +10,32 @@ import Socket
 import GameController
 
 struct ContentView: View {
-    @EnvironmentObject var envObj: envObject
     var body: some View {
         VStack{
             VStack{
                 HStack {
                     Button(action: {
-                        try! envObj.socket.listen(on: 5050)
+                        try! globalObj.socket.listen(on: 5050)
                     }) {
-                        Text("Start Listen")
+                        Text("Start Listen&Try accept")
                     }
                     Button(action: {
-                        try! envObj.socket.acceptConnection()
+                        try! globalObj.socket.acceptConnection()
                     }) {
                         Text("Accept connection")
                     }
                     Button(action: {
-                        let time = Date()
-                        try! envObj.socket.write(from: time.timeIntervalSince1970.formatted())
+                        var c = 0
+                        while c<100 {
+                            c += 1
+                            try! globalObj.socket.write(from: String(c))
+                        }
                     }) {
                         Text("Send Msg")
                     }
                     Button(action: {
-                        try! envObj.socket.write(from: "SIG Close Socket")
-                        envObj.socket.close()
+                        try! globalObj.socket.write(from: "SIG Close Socket")
+                        globalObj.socket.close()
                     }) {
                         Text("Close Connection")
                     }
@@ -41,7 +43,7 @@ struct ContentView: View {
                 Text("Froce:")
             }
             Spacer()
-            //TouchableViewContainer()
+            TouchableViewContainer()
         }
     }
 }
@@ -70,7 +72,6 @@ class TouchableView: UIView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             createViewForTouch(touch: touch)
-            
         }
     }
  
@@ -79,9 +80,13 @@ class TouchableView: UIView {
            let view = viewForTouch(touch: touch)
            // Move the view to the new location.
            let newLocation = touch.location(in: self)
-           let normalizedForce = touch.force / touch.maximumPossibleForce
+           let normalizedForce = touch.force / CGFloat(5.555556)
            view?.center = newLocation
            view?.bounds.size = CGSize(width: 130*normalizedForce, height: 130*normalizedForce)
+           if globalObj.socket.isConnected{
+               try! globalObj.socket.write(from: normalizedForce.formatted())
+           }
+           globalObj.force = normalizedForce
        }
    }
     

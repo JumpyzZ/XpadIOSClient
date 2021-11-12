@@ -14,6 +14,7 @@
 		A98435AE273B8D54009ED459 /* GameControllerIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435AD273B8D54009ED459 /* GameControllerIOSTests.swift */; };
 		A98435B8273B8D54009ED459 /* GameControllerIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */; };
 		A98435BA273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */; };
+		A9F4EEA2273E2E82001AA5F3 /* contorllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4EEA1273E2E82001AA5F3 /* contorllerView.swift */; };
 		C2C35310A3C50107F3497514 /* Pods_GameControllerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		A98435B3273B8D54009ED459 /* GameControllerIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControllerIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSUITests.swift; sourceTree = "<group>"; };
 		A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9F4EEA1273E2E82001AA5F3 /* contorllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contorllerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */,
+				A9F4EEA1273E2E82001AA5F3 /* contorllerView.swift */,
 				A984359E273B8D53009ED459 /* ContentView.swift */,
 				A98435A0273B8D54009ED459 /* Assets.xcassets */,
 				A98435A2273B8D54009ED459 /* Preview Content */,
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A984359F273B8D53009ED459 /* ContentView.swift in Sources */,
+				A9F4EEA2273E2E82001AA5F3 /* contorllerView.swift in Sources */,
 				A984359D273B8D53009ED459 /* GameControllerIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

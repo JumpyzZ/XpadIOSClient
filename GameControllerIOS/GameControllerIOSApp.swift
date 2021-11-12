@@ -11,34 +11,22 @@ import Socket
 
 @main
 struct GameControllerIOSApp: App {
-    @StateObject var envObj = envObject()
+    let _foo = globalObj.force
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(envObj)
         }
     }
 }
+var globalObj = globalObject()
 
-class envObject: ObservableObject {
+class globalObject: ObservableObject {
     @Published var socket: Socket
-    var virtualConfiguration = GCVirtualController.Configuration()
-    @Published var virtualController: GCVirtualController
+    @Published var force: CGFloat
 
     
     init(){
         self.socket = try! Socket.create()
-        self.virtualConfiguration.elements = [GCInputButtonA,
-                                         GCInputButtonB,
-                                         GCInputButtonX,
-                                         GCInputButtonY,
-                                         GCInputDirectionPad,
-                                         GCInputButtonHome,
-                                         GCInputButtonShare,
-                                         GCInputLeftShoulder,
-                                         GCInputRightShoulder]
-        self.virtualController = GCVirtualController(configuration: virtualConfiguration)
-        self.virtualController.connect()
-        print(1)
+        self.force = 0.0
     }
 }
