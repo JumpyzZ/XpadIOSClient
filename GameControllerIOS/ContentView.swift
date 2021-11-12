@@ -10,40 +10,66 @@ import Socket
 import GameController
 
 struct ContentView: View {
+    @State var isListening = false
+    @State var isConnected = false
     var body: some View {
         VStack{
             VStack{
                 HStack {
                     Button(action: {
-                        try! globalObj.socket.listen(on: 5050)
+                        let s = globalObj.socket
+                        try! s.listen(on: 5050)
+                        isListening = s.isListening
+                        isConnected = s.isConnected
                     }) {
-                        Text("Start Listen&Try accept")
+                        Text("Start Listen")
                     }
                     Button(action: {
-                        try! globalObj.socket.acceptConnection()
+                        let s = globalObj.socket
+                        try! s.acceptConnection()
+                        isListening = s.isListening
+                        isConnected = s.isConnected
                     }) {
                         Text("Accept connection")
                     }
                     Button(action: {
-                        var c = 0
-                        while c<100 {
-                            c += 1
-                            try! globalObj.socket.write(from: String(c))
-                        }
-                    }) {
-                        Text("Send Msg")
-                    }
-                    Button(action: {
-                        try! globalObj.socket.write(from: "SIG Close Socket")
-                        globalObj.socket.close()
+                        let s = globalObj.socket
+                        try! s.write(from: "SIG Close Socket")
+                        s.close()
+                        isListening = s.isListening
+                        isConnected = s.isConnected
                     }) {
                         Text("Close Connection")
                     }
+                    HStack{
+                        if !(isListening || isConnected){
+                            Image(systemName: "bolt.horizontal.circle.fill")
+                                .foregroundColor(.red)
+                        }
+                        else{
+                            if isListening{
+                                Image(systemName: "bolt.horizontal.circle.fill")
+                                    .foregroundColor(.yellow)
+                            }
+                            if isConnected{
+                                Image(systemName: "bolt.horizontal.circle.fill")
+                                    .foregroundColor(.green)
+                            }
+                        }
+                    }
                 }
-                Text("Froce:")
             }
-            Spacer()
-            TouchableViewContainer()
+            ZStack{
+                TouchableViewContainer()
+                HStack{
+                    buttonAView()
+                    buttonBView()
+                    buttonXView()
+                    buttonYView()
+                }
+                
+            }
+            
         }
     }
 }
@@ -187,6 +213,7 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             if #available(iOS 15.0, *) {
                 ContentView()
+.previewInterfaceOrientation(.landscapeLeft)
             } else {
                 // Fallback on earlier versions
             }
