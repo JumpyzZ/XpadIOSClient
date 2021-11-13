@@ -14,6 +14,8 @@ struct GameControllerIOSApp: App {
     let _foo = globalObj.force
     var body: some Scene {
         WindowGroup {
+            //backgroundTouchableView()
+            //dpadView()
             ContentView()
         }
     }

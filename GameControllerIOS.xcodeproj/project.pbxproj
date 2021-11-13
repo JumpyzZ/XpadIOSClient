@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91DE2DB273FA58D00C5A337 /* backgroundTouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DE2DA273FA58C00C5A337 /* backgroundTouchableView.swift */; };
 		A984359D273B8D53009ED459 /* GameControllerIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */; };
 		A984359F273B8D53009ED459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984359E273B8D53009ED459 /* ContentView.swift */; };
 		A98435A1273B8D54009ED459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98435A0273B8D54009ED459 /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		A98435AE273B8D54009ED459 /* GameControllerIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435AD273B8D54009ED459 /* GameControllerIOSTests.swift */; };
 		A98435B8273B8D54009ED459 /* GameControllerIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */; };
 		A98435BA273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */; };
-		A9F4EEA2273E2E82001AA5F3 /* contorllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4EEA1273E2E82001AA5F3 /* contorllerView.swift */; };
+		A9F4EEA2273E2E82001AA5F3 /* dpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4EEA1273E2E82001AA5F3 /* dpadView.swift */; };
 		C2C35310A3C50107F3497514 /* Pods_GameControllerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameControllerIOS.debug.xcconfig"; path = "Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameControllerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameControllerIOS.release.xcconfig"; path = "Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS.release.xcconfig"; sourceTree = "<group>"; };
+		A91DE2DA273FA58C00C5A337 /* backgroundTouchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundTouchableView.swift; sourceTree = "<group>"; };
 		A9843599273B8D53009ED459 /* GameControllerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControllerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSApp.swift; sourceTree = "<group>"; };
 		A984359E273B8D53009ED459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		A98435B3273B8D54009ED459 /* GameControllerIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControllerIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSUITests.swift; sourceTree = "<group>"; };
 		A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A9F4EEA1273E2E82001AA5F3 /* contorllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contorllerView.swift; sourceTree = "<group>"; };
+		A9F4EEA1273E2E82001AA5F3 /* dpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dpadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,9 @@
 		A984359B273B8D53009ED459 /* GameControllerIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A91DE2DA273FA58C00C5A337 /* backgroundTouchableView.swift */,
 				A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */,
-				A9F4EEA1273E2E82001AA5F3 /* contorllerView.swift */,
+				A9F4EEA1273E2E82001AA5F3 /* dpadView.swift */,
 				A984359E273B8D53009ED459 /* ContentView.swift */,
 				A98435A0273B8D54009ED459 /* Assets.xcassets */,
 				A98435A2273B8D54009ED459 /* Preview Content */,
@@ -329,7 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A984359F273B8D53009ED459 /* ContentView.swift in Sources */,
-				A9F4EEA2273E2E82001AA5F3 /* contorllerView.swift in Sources */,
+				A9F4EEA2273E2E82001AA5F3 /* dpadView.swift in Sources */,
+				A91DE2DB273FA58D00C5A337 /* backgroundTouchableView.swift in Sources */,
 				A984359D273B8D53009ED459 /* GameControllerIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
