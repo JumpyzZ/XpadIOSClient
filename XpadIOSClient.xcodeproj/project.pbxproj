@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A91DE2DB273FA58D00C5A337 /* backgroundTouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DE2DA273FA58C00C5A337 /* backgroundTouchableView.swift */; };
 		A91DE2DD2740F5F700C5A337 /* steeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DE2DC2740F5F700C5A337 /* steeringView.swift */; };
-		A984359D273B8D53009ED459 /* GameControllerIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */; };
+		A984359D273B8D53009ED459 /* XpadIOSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984359C273B8D53009ED459 /* XpadIOSClientApp.swift */; };
 		A984359F273B8D53009ED459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984359E273B8D53009ED459 /* ContentView.swift */; };
 		A98435A1273B8D54009ED459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98435A0273B8D54009ED459 /* Assets.xcassets */; };
 		A98435A4273B8D54009ED459 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98435A3273B8D54009ED459 /* Preview Assets.xcassets */; };
@@ -17,7 +17,7 @@
 		A98435B8273B8D54009ED459 /* GameControllerIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */; };
 		A98435BA273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */; };
 		A9F4EEA2273E2E82001AA5F3 /* dpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4EEA1273E2E82001AA5F3 /* dpadView.swift */; };
-		C2C35310A3C50107F3497514 /* Pods_GameControllerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */; };
+		AE4A665C1EE0F0451B85671D /* Pods_XpadIOSClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98E1A3AB311BB80FB4B59C5 /* Pods_XpadIOSClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +38,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameControllerIOS.debug.xcconfig"; path = "Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameControllerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameControllerIOS.release.xcconfig"; path = "Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS.release.xcconfig"; sourceTree = "<group>"; };
+		3FA479CDDB36E16E907D0CC9 /* Pods-XpadIOSClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XpadIOSClient.release.xcconfig"; path = "Target Support Files/Pods-XpadIOSClient/Pods-XpadIOSClient.release.xcconfig"; sourceTree = "<group>"; };
+		5029F5C010A9B4B342DFE149 /* Pods-XpadIOSClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XpadIOSClient.debug.xcconfig"; path = "Target Support Files/Pods-XpadIOSClient/Pods-XpadIOSClient.debug.xcconfig"; sourceTree = "<group>"; };
 		A91DE2DA273FA58C00C5A337 /* backgroundTouchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundTouchableView.swift; sourceTree = "<group>"; };
 		A91DE2DC2740F5F700C5A337 /* steeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = steeringView.swift; sourceTree = "<group>"; };
-		A9843599273B8D53009ED459 /* GameControllerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameControllerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSApp.swift; sourceTree = "<group>"; };
+		A9843599273B8D53009ED459 /* XpadIOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XpadIOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A984359C273B8D53009ED459 /* XpadIOSClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpadIOSClientApp.swift; sourceTree = "<group>"; };
 		A984359E273B8D53009ED459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A98435A0273B8D54009ED459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A98435A3273B8D54009ED459 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A98435A9273B8D54009ED459 /* GameControllerIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControllerIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98435A9273B8D54009ED459 /* XpadIOSClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XpadIOSClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98435AD273B8D54009ED459 /* GameControllerIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSTests.swift; sourceTree = "<group>"; };
-		A98435B3273B8D54009ED459 /* GameControllerIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameControllerIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98435B3273B8D54009ED459 /* XpadIOSClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XpadIOSClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSUITests.swift; sourceTree = "<group>"; };
 		A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9F4EEA1273E2E82001AA5F3 /* dpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dpadView.swift; sourceTree = "<group>"; };
+		C98E1A3AB311BB80FB4B59C5 /* Pods_XpadIOSClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XpadIOSClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C35310A3C50107F3497514 /* Pods_GameControllerIOS.framework in Frameworks */,
+				AE4A665C1EE0F0451B85671D /* Pods_XpadIOSClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,48 +82,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		653D7EEDCBE940757E9004A0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				86A83C662E9CD83BBD7309A2 /* Pods_GameControllerIOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A9843590273B8D53009ED459 = {
 			isa = PBXGroup;
 			children = (
-				A984359B273B8D53009ED459 /* GameControllerIOS */,
-				A98435AC273B8D54009ED459 /* GameControllerIOSTests */,
-				A98435B6273B8D54009ED459 /* GameControllerIOSUITests */,
+				A984359B273B8D53009ED459 /* XpadIOSClient */,
+				A98435AC273B8D54009ED459 /* XpadIOSClientTests */,
+				A98435B6273B8D54009ED459 /* XpadIOSClientUITests */,
 				A984359A273B8D53009ED459 /* Products */,
 				C1C13AF2AD38B83B21E08AF3 /* Pods */,
-				653D7EEDCBE940757E9004A0 /* Frameworks */,
+				DBA57966345689828D7A72EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A984359A273B8D53009ED459 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9843599273B8D53009ED459 /* GameControllerIOS.app */,
-				A98435A9273B8D54009ED459 /* GameControllerIOSTests.xctest */,
-				A98435B3273B8D54009ED459 /* GameControllerIOSUITests.xctest */,
+				A9843599273B8D53009ED459 /* XpadIOSClient.app */,
+				A98435A9273B8D54009ED459 /* XpadIOSClientTests.xctest */,
+				A98435B3273B8D54009ED459 /* XpadIOSClientUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A984359B273B8D53009ED459 /* GameControllerIOS */ = {
+		A984359B273B8D53009ED459 /* XpadIOSClient */ = {
 			isa = PBXGroup;
 			children = (
 				A91DE2DA273FA58C00C5A337 /* backgroundTouchableView.swift */,
-				A984359C273B8D53009ED459 /* GameControllerIOSApp.swift */,
+				A984359C273B8D53009ED459 /* XpadIOSClientApp.swift */,
 				A91DE2DC2740F5F700C5A337 /* steeringView.swift */,
 				A9F4EEA1273E2E82001AA5F3 /* dpadView.swift */,
 				A984359E273B8D53009ED459 /* ContentView.swift */,
 				A98435A0273B8D54009ED459 /* Assets.xcassets */,
 				A98435A2273B8D54009ED459 /* Preview Content */,
 			);
-			path = GameControllerIOS;
+			path = XpadIOSClient;
 			sourceTree = "<group>";
 		};
 		A98435A2273B8D54009ED459 /* Preview Content */ = {
@@ -134,57 +126,65 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A98435AC273B8D54009ED459 /* GameControllerIOSTests */ = {
+		A98435AC273B8D54009ED459 /* XpadIOSClientTests */ = {
 			isa = PBXGroup;
 			children = (
 				A98435AD273B8D54009ED459 /* GameControllerIOSTests.swift */,
 			);
-			path = GameControllerIOSTests;
+			path = XpadIOSClientTests;
 			sourceTree = "<group>";
 		};
-		A98435B6273B8D54009ED459 /* GameControllerIOSUITests */ = {
+		A98435B6273B8D54009ED459 /* XpadIOSClientUITests */ = {
 			isa = PBXGroup;
 			children = (
 				A98435B7273B8D54009ED459 /* GameControllerIOSUITests.swift */,
 				A98435B9273B8D54009ED459 /* GameControllerIOSUITestsLaunchTests.swift */,
 			);
-			path = GameControllerIOSUITests;
+			path = XpadIOSClientUITests;
 			sourceTree = "<group>";
 		};
 		C1C13AF2AD38B83B21E08AF3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */,
-				9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */,
+				5029F5C010A9B4B342DFE149 /* Pods-XpadIOSClient.debug.xcconfig */,
+				3FA479CDDB36E16E907D0CC9 /* Pods-XpadIOSClient.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBA57966345689828D7A72EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C98E1A3AB311BB80FB4B59C5 /* Pods_XpadIOSClient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9843598273B8D53009ED459 /* GameControllerIOS */ = {
+		A9843598273B8D53009ED459 /* XpadIOSClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A98435BD273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOS" */;
+			buildConfigurationList = A98435BD273B8D54009ED459 /* Build configuration list for PBXNativeTarget "XpadIOSClient" */;
 			buildPhases = (
-				2BBDB103449F53B00618E082 /* [CP] Check Pods Manifest.lock */,
+				65D6FE500B1925FA4D713DAD /* [CP] Check Pods Manifest.lock */,
 				A9843595273B8D53009ED459 /* Sources */,
 				A9843596273B8D53009ED459 /* Frameworks */,
 				A9843597273B8D53009ED459 /* Resources */,
-				38D157D7B273073D788BBAF9 /* [CP] Embed Pods Frameworks */,
+				DE4C1408D93AB340D28BAB91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GameControllerIOS;
+			name = XpadIOSClient;
 			productName = GameControllerIOS;
-			productReference = A9843599273B8D53009ED459 /* GameControllerIOS.app */;
+			productReference = A9843599273B8D53009ED459 /* XpadIOSClient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A98435A8273B8D54009ED459 /* GameControllerIOSTests */ = {
+		A98435A8273B8D54009ED459 /* XpadIOSClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A98435C0273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOSTests" */;
+			buildConfigurationList = A98435C0273B8D54009ED459 /* Build configuration list for PBXNativeTarget "XpadIOSClientTests" */;
 			buildPhases = (
 				A98435A5273B8D54009ED459 /* Sources */,
 				A98435A6273B8D54009ED459 /* Frameworks */,
@@ -195,14 +195,14 @@
 			dependencies = (
 				A98435AB273B8D54009ED459 /* PBXTargetDependency */,
 			);
-			name = GameControllerIOSTests;
+			name = XpadIOSClientTests;
 			productName = GameControllerIOSTests;
-			productReference = A98435A9273B8D54009ED459 /* GameControllerIOSTests.xctest */;
+			productReference = A98435A9273B8D54009ED459 /* XpadIOSClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A98435B2273B8D54009ED459 /* GameControllerIOSUITests */ = {
+		A98435B2273B8D54009ED459 /* XpadIOSClientUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A98435C3273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOSUITests" */;
+			buildConfigurationList = A98435C3273B8D54009ED459 /* Build configuration list for PBXNativeTarget "XpadIOSClientUITests" */;
 			buildPhases = (
 				A98435AF273B8D54009ED459 /* Sources */,
 				A98435B0273B8D54009ED459 /* Frameworks */,
@@ -213,9 +213,9 @@
 			dependencies = (
 				A98435B5273B8D54009ED459 /* PBXTargetDependency */,
 			);
-			name = GameControllerIOSUITests;
+			name = XpadIOSClientUITests;
 			productName = GameControllerIOSUITests;
-			productReference = A98435B3273B8D54009ED459 /* GameControllerIOSUITests.xctest */;
+			productReference = A98435B3273B8D54009ED459 /* XpadIOSClientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9843594273B8D53009ED459 /* Build configuration list for PBXProject "GameControllerIOS" */;
+			buildConfigurationList = A9843594273B8D53009ED459 /* Build configuration list for PBXProject "XpadIOSClient" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -254,9 +254,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9843598273B8D53009ED459 /* GameControllerIOS */,
-				A98435A8273B8D54009ED459 /* GameControllerIOSTests */,
-				A98435B2273B8D54009ED459 /* GameControllerIOSUITests */,
+				A9843598273B8D53009ED459 /* XpadIOSClient */,
+				A98435A8273B8D54009ED459 /* XpadIOSClientTests */,
+				A98435B2273B8D54009ED459 /* XpadIOSClientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +288,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2BBDB103449F53B00618E082 /* [CP] Check Pods Manifest.lock */ = {
+		65D6FE500B1925FA4D713DAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,28 +303,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GameControllerIOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-XpadIOSClient-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		38D157D7B273073D788BBAF9 /* [CP] Embed Pods Frameworks */ = {
+		DE4C1408D93AB340D28BAB91 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XpadIOSClient/Pods-XpadIOSClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XpadIOSClient/Pods-XpadIOSClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameControllerIOS/Pods-GameControllerIOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XpadIOSClient/Pods-XpadIOSClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -338,7 +338,7 @@
 				A91DE2DD2740F5F700C5A337 /* steeringView.swift in Sources */,
 				A9F4EEA2273E2E82001AA5F3 /* dpadView.swift in Sources */,
 				A91DE2DB273FA58D00C5A337 /* backgroundTouchableView.swift in Sources */,
-				A984359D273B8D53009ED459 /* GameControllerIOSApp.swift in Sources */,
+				A984359D273B8D53009ED459 /* XpadIOSClientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +364,12 @@
 /* Begin PBXTargetDependency section */
 		A98435AB273B8D54009ED459 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9843598273B8D53009ED459 /* GameControllerIOS */;
+			target = A9843598273B8D53009ED459 /* XpadIOSClient */;
 			targetProxy = A98435AA273B8D54009ED459 /* PBXContainerItemProxy */;
 		};
 		A98435B5273B8D54009ED459 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9843598273B8D53009ED459 /* GameControllerIOS */;
+			target = A9843598273B8D53009ED459 /* XpadIOSClient */;
 			targetProxy = A98435B4273B8D54009ED459 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -493,13 +493,13 @@
 		};
 		A98435BE273B8D54009ED459 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32E93BCA94FE52356F6EA97E /* Pods-GameControllerIOS.debug.xcconfig */;
+			baseConfigurationReference = 5029F5C010A9B4B342DFE149 /* Pods-XpadIOSClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GameControllerIOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XpadIOSClient/Preview Content\"";
 				DEVELOPMENT_TEAM = 8BTHM68B52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -516,7 +516,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zhu.GameControllerIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = zhu.XpadIOSClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -526,13 +526,13 @@
 		};
 		A98435BF273B8D54009ED459 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E91C7BB749A9DD5F4D59378 /* Pods-GameControllerIOS.release.xcconfig */;
+			baseConfigurationReference = 3FA479CDDB36E16E907D0CC9 /* Pods-XpadIOSClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GameControllerIOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XpadIOSClient/Preview Content\"";
 				DEVELOPMENT_TEAM = 8BTHM68B52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -549,7 +549,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zhu.GameControllerIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = zhu.XpadIOSClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -578,7 +578,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameControllerIOS.app/GameControllerIOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XpadIOSClient.app/XpadIOSClient";
 			};
 			name = Debug;
 		};
@@ -603,7 +603,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameControllerIOS.app/GameControllerIOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XpadIOSClient.app/XpadIOSClient";
 			};
 			name = Release;
 		};
@@ -656,7 +656,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9843594273B8D53009ED459 /* Build configuration list for PBXProject "GameControllerIOS" */ = {
+		A9843594273B8D53009ED459 /* Build configuration list for PBXProject "XpadIOSClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A98435BB273B8D54009ED459 /* Debug */,
@@ -665,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A98435BD273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOS" */ = {
+		A98435BD273B8D54009ED459 /* Build configuration list for PBXNativeTarget "XpadIOSClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A98435BE273B8D54009ED459 /* Debug */,
@@ -674,7 +674,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A98435C0273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOSTests" */ = {
+		A98435C0273B8D54009ED459 /* Build configuration list for PBXNativeTarget "XpadIOSClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A98435C1273B8D54009ED459 /* Debug */,
@@ -683,7 +683,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A98435C3273B8D54009ED459 /* Build configuration list for PBXNativeTarget "GameControllerIOSUITests" */ = {
+		A98435C3273B8D54009ED459 /* Build configuration list for PBXNativeTarget "XpadIOSClientUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A98435C4273B8D54009ED459 /* Debug */,

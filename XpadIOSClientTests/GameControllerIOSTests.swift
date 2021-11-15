@@ -1,14 +1,14 @@
 //
-//  GameControllerIOSTests.swift
-//  GameControllerIOSTests
+//  XpadIOSClientTests.swift
+//  XpadIOSClientTests
 //
 //  Created by zhu on 2021/11/10.
 //
 
 import XCTest
-@testable import GameControllerIOS
+@testable import XpadIOSClient
 
-class GameControllerIOSTests: XCTestCase {
+class XpadIOSClientTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,6 +1,6 @@
 //
-//  GameControllerIOSApp.swift
-//  GameControllerIOS
+//  XpadIOSClientApp.swift
+//  XpadIOSClient
 //
 //  Created by zhu on 2021/11/10.
 //
@@ -11,7 +11,7 @@ import Socket
 import CoreMotion
 
 @main
-struct GameControllerIOSApp: App {
+struct XpadIOSClientApp: App {
     let _foo = globalObj.force
     var body: some Scene {
         WindowGroup {

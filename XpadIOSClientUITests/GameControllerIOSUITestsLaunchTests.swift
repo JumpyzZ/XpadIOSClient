@@ -1,13 +1,13 @@
 //
-//  GameControllerIOSUITestsLaunchTests.swift
-//  GameControllerIOSUITests
+//  XpadIOSClientUITestsLaunchTests.swift
+//  XpadIOSClientUITests
 //
 //  Created by zhu on 2021/11/10.
 //
 
 import XCTest
 
-class GameControllerIOSUITestsLaunchTests: XCTestCase {
+class XpadIOSClientUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

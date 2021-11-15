@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  GameControllerIOS
+//  XpadIOSClient
 //
 //  Created by zhu on 2021/11/10.
 //
